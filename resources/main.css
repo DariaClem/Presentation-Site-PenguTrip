@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    /* variables */
+    --dustedBlue: rgba(97, 119, 140, 255);
+    --dustedBeige: rgba(137, 124, 116, 1);
+    --lightBlue: rgba(107, 122, 139, 1);
+}
+
+@font-face {
+    font-family: 'Animals';
+    src: url('../fonts/Animals.woff2') format('woff2'),
+    url('../fonts/Animals.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AVA';
+    src: url('../fonts/AVA.woff2') format('woff2'),
+    url('../fonts/AVA.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TimeBurner';
+    src: url('../fonts/TimeBurner.woff2') format('woff2'),
+    url('../fonts/TimeBurner.woff') format('woff');
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(150deg, var(--dustedBlue), var(--dustedBlue), var(--dustedBeige));
+}
+
+.presentation {
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    width: 100%;
+}
+
+.navbarVertical {
+    width: 100px;
+    height: 100%;
+    border-right: solid 3px var(--lightBlue);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbarVertical a {
+    font-family: 'Animals', serif;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.navbarVertical h2 {
+    font-family: 'TimeBurner', serif;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    user-select: none;
+}
+
+.penguTripLogo {
+    height: 70%;
+    width: 70%;
+
+    background-image: url("../images/prezentare8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -45%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.buttons small {
+    font-size: 18px;
+    color: white;
+    font-family: 'Gruppo', cursive;
+}
+
+.buttons button {
+    width: 12em;
+    height: 4em;
+    border-radius: 30em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Gruppo', cursive;
+    font-weight: 800;
+    transition: 0.5s;
+}
+
+.buttons button:hover {
+    background-color: #cecece;
+}
+
+.buttons button:active {
+    background-color: #a4a4a4;
+}
+
+.buttons canvas {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.info {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: white;
+}
+
+.description {
+    width: 350px;
+}
+
+.info h1 {
+    font-family: 'AVA', serif;
+    font-size: 100px;
+}
+
+.info h2 {
+    font-family: 'Gruppo', cursive;
+    font-size: 30px;
+}
+
+.info p {
+    font-family: 'Gruppo', cursive;
+    font-size: 22px;
+}
+
+.github {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    font-size: 50px;
+}
+
+.github a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttons canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+
