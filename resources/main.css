@@ -19,12 +19,6 @@
 }
 
 @font-face {
-    font-family: 'AVA';
-    src: url('../../Presentation-Site-PenguTrip/fonts/AVA.woff2') format('woff2'),
-    url('../../Presentation-Site-PenguTrip/fonts/AVA.woff') format('woff');
-}
-
-@font-face {
     font-family: 'TimeBurner';
     src: url('../../Presentation-Site-PenguTrip/fonts/TimeBurner.woff2') format('woff2'),
     url('../../Presentation-Site-PenguTrip/fonts/TimeBurner.woff') format('woff');
@@ -150,11 +144,6 @@ body {
     width: 350px;
 }
 
-.info h1 {
-    font-family: 'AVA', serif;
-    font-size: 100px;
-}
-
 .info h2 {
     font-family: 'Gruppo', cursive;
     font-size: 30px;
@@ -185,4 +174,7 @@ body {
     pointer-events: none;
 }
 
-
+.info img {
+    width: 500px;
+    margin-left: -10px;
+}
