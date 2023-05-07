@@ -14,20 +14,20 @@
 
 @font-face {
     font-family: 'Animals';
-    src: url('../fonts/Animals.woff2') format('woff2'),
-    url('../fonts/Animals.woff') format('woff');
+    src: url('../../Presentation-Site-PenguTrip/fonts/Animals.woff2') format('woff2'),
+    url('../../Presentation-Site-PenguTrip/fonts/Animals.woff') format('woff');
 }
 
 @font-face {
     font-family: 'AVA';
-    src: url('../fonts/AVA.woff2') format('woff2'),
-    url('../fonts/AVA.woff') format('woff');
+    src: url('../../Presentation-Site-PenguTrip/fonts/AVA.woff2') format('woff2'),
+    url('../../Presentation-Site-PenguTrip/fonts/AVA.woff') format('woff');
 }
 
 @font-face {
     font-family: 'TimeBurner';
-    src: url('../fonts/TimeBurner.woff2') format('woff2'),
-    url('../fonts/TimeBurner.woff') format('woff');
+    src: url('../../Presentation-Site-PenguTrip/fonts/TimeBurner.woff2') format('woff2'),
+    url('../../Presentation-Site-PenguTrip/fonts/TimeBurner.woff') format('woff');
 }
 
 body {
@@ -75,7 +75,7 @@ body {
     height: 70%;
     width: 70%;
 
-    background-image: url("../images/prezentare8.png");
+    background-image: url("../../Presentation-Site-PenguTrip/images/prezentare8.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
