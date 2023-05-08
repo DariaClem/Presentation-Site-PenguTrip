@@ -25,20 +25,22 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
-    background: linear-gradient(150deg, var(--dustedBlue), var(--dustedBlue), var(--dustedBeige));
+    background: linear-gradient(150deg, var(--dustedBlue), var(--dustedBlue), var(--dustedBeige)) no-repeat center;
+    background-size: cover;
+    overflow-x: hidden;
 }
 
 .presentation {
     display: flex;
     flex-flow: row;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .navbarVertical {
-    width: 100px;
+    width: 6em;
     height: 100%;
     border-right: solid 3px var(--lightBlue);
     display: flex;
@@ -140,6 +142,13 @@ body {
     color: white;
 }
 
+.info img {
+    width: 500px;
+    margin-left: -10px;
+    user-select: none;
+    pointer-events: none;
+}
+
 .description {
     width: 350px;
 }
@@ -174,7 +183,76 @@ body {
     pointer-events: none;
 }
 
-.info img {
-    width: 500px;
-    margin-left: -10px;
+.penguWithMap, .availableForSmallWindows {
+    display: none;
+}
+
+@media screen and (max-width: 1352px) {
+    .presentation, .info, .description {
+        all: unset;
+    }
+
+    .presentation {
+        padding: 30px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .penguTripLogo{
+        display: none;
+    }
+
+    .content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info {
+        color: white;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .info img {
+        margin: unset;
+        width: 50%;
+    }
+
+    .info h2 {
+        font-size: 22px;
+    }
+
+    .description {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .penguWithMap {
+        display: block;
+        width: 100%;
+    }
+
+    .github {
+        right: 0;
+        bottom: 0;
+    }
+
+    .availableForSmallWindows {
+        display: block;
+        color: white;
+        font-family: 'Gruppo', cursive;
+        font-size: 20px;
+    }
+
+    .navbarVertical {
+        flex-flow: row;
+        width: 100%;
+        padding: 0 40px;
+        border-right: none;
+    }
 }
