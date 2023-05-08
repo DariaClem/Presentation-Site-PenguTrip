@@ -220,16 +220,20 @@ body {
 
     .info img {
         margin: unset;
-        width: 50%;
+        width: 70%;
     }
 
     .info h2 {
-        font-size: 22px;
+        font-size: 55px;
     }
 
     .description {
-        padding: 10px;
+        padding: 50px;
         width: 90%;
+    }
+
+    .description p {
+        font-size: 60px;
     }
 
     .penguWithMap {
@@ -238,6 +242,7 @@ body {
     }
 
     .github {
+        font-size: 100px;
         right: 0;
         bottom: 0;
     }
@@ -246,13 +251,22 @@ body {
         display: block;
         color: white;
         font-family: 'Gruppo', cursive;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .navbarVertical {
         flex-flow: row;
+        align-items: center;
         width: 100%;
         padding: 0 40px;
         border-right: none;
+    }
+
+    .navbarVertical a {
+        font-size: 190px;
+    }
+
+    .navbarVertical h2 {
+        font-size: 60px;
     }
 }
