@@ -10,6 +10,10 @@
     --dustedBlue: rgba(97, 119, 140, 255);
     --dustedBeige: rgba(137, 124, 116, 1);
     --lightBlue: rgba(107, 122, 139, 1);
+    --lightGrey: #cecece;
+    --darkGrey: #a4a4a4;
+    --lightCyan: #a0ffed;
+    --darkCyan: #00ffcc;
 }
 
 @font-face {
@@ -114,11 +118,11 @@ body {
 }
 
 .buttons button:hover {
-    background-color: #cecece;
+    background-color: var(--lightGrey);
 }
 
 .buttons button:active {
-    background-color: #a4a4a4;
+    background-color: var(--darkGrey);
 }
 
 .buttons canvas {
@@ -187,7 +191,34 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 1352px) {
+.language {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: 'Gruppo', cursive;
+    font-size: 23px;
+}
+
+.language small {
+    cursor: pointer;
+    color: white;
+}
+
+small.en {
+    color: var(--lightCyan);
+}
+
+.content-romanian {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
     .presentation, .info, .description {
         all: unset;
     }
@@ -200,7 +231,7 @@ body {
         align-items: center;
     }
 
-    .penguTripLogo{
+    .penguTripLogo {
         display: none;
     }
 
