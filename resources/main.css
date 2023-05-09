@@ -218,7 +218,7 @@ small.en {
     display: none;
 }
 
-@media screen and (max-width:  1352px) {
+@media screen and (max-width: 1352px) {
     .presentation, .info, .description {
         all: unset;
     }
@@ -236,6 +236,7 @@ small.en {
     }
 
     .content {
+        position: relative;
         display: flex;
         flex-flow: column;
         justify-content: center;
@@ -264,7 +265,7 @@ small.en {
     }
 
     .description p {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .penguWithMap {
@@ -276,13 +277,6 @@ small.en {
         font-size: 100px;
         right: 0;
         bottom: 0;
-    }
-
-    .availableForSmallWindows {
-        display: block;
-        color: white;
-        font-family: 'Gruppo', cursive;
-        font-size: 30px;
     }
 
     .navbarVertical {
@@ -300,9 +294,22 @@ small.en {
     .navbarVertical h2 {
         font-size: 60px;
     }
+    
+    .availableForSmallWindows {
+        display: unset;
+        color: white;
+        font-family: 'Gruppo', cursive;
+        font-size: 40px;
+    }
 
     .language {
-        position: fixed;
+        position: unset;
         font-size: 45px;
+        width: 100%;
+        height: 40px;
+    }
+
+    .content-romanian {
+        display: none;
     }
 }
