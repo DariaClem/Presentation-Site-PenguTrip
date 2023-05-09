@@ -49,7 +49,7 @@ window.onload = function () {
             }
 
             document.getElementsByClassName("content-english")[0].style.display = "none";
-            document.getElementsByClassName("content-romanian")[0].style.display = "block";
+            document.getElementsByClassName("content-romanian")[0].style.display = "flex";
 
             for (let en of enSmall) {
                 en.style.color = "white";
@@ -65,7 +65,7 @@ window.onload = function () {
             }
 
             document.getElementsByClassName("content-romanian")[0].style.display = "none";
-            document.getElementsByClassName("content-english")[0].style.display = "block";
+            document.getElementsByClassName("content-english")[0].style.display = "flex";
 
             for (let ro of roSmall) {
                 ro.style.color = "white";
