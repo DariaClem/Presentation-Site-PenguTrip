@@ -202,7 +202,7 @@ body {
 
     color: white;
     font-family: 'Gruppo', cursive;
-    font-size: 23px;
+    font-size: 22px;
 }
 
 .language small {
@@ -218,7 +218,7 @@ small.en {
     display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width:  1352px) {
     .presentation, .info, .description {
         all: unset;
     }
@@ -299,5 +299,10 @@ small.en {
 
     .navbarVertical h2 {
         font-size: 60px;
+    }
+
+    .language {
+        position: fixed;
+        font-size: 45px;
     }
 }
